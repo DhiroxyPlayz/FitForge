@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lexend, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+}
+
+h1 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    line-height: 1.2em;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    line-height: 1.2em;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+span {
+    background: -webkit-linear-gradient(45deg, #091df6, #8708ee, #ea360e, #ea360e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    position: relative;
+    font-size: 20px;
+    margin: 20px 15px 15px;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: #151515;
+}
+
+
+button:hover {
+    background: linear-gradient(45deg, #091df6, #8708ee, #ea360e, #ea360e);
+    background-size: 300% auto;
+    border: 1px solid transparent;
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0 center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+
+    55% {
+        background-position: 70% center;
+    }
+
+    100% {
+        background-position: 0 center;
+    }
+}
+
+a {
+    text-decoration: none;
+}
